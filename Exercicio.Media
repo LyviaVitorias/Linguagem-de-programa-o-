@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+    float A, B, C, MEDIA;
+
+    A = 5.8;
+    B = 7.6;
+    C = 6.7;
+
+    MEDIA = (A + B + C) / 3;
+
+    printf("A media sera de: %.2f\n", MEDIA);
+
+    return 0;
+}
