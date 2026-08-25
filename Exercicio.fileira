@@ -1,0 +1,144 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(int argc, char *argv[]) {
+
+    // Exercicio 1
+
+    int primeiro, segundo, aux;
+
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &primeiro);
+
+    printf("Digite o segundo valor: ");
+    scanf("%d", &segundo);
+
+    aux = primeiro;
+    primeiro = segundo;
+    segundo = aux;
+
+    printf("%d\n%d\n", primeiro, segundo);
+
+
+    // Exercicio 2
+
+    double valor;
+
+    printf("\nDigite o valor: ");
+    scanf("%lf", &valor);
+
+    printf("Valor em notacao cientifica: %e\n", valor);
+
+
+    // Exercicio 3
+
+    int n, res;
+    int bit1, bit2, bit3, bit4, bit5, bit6;
+
+    printf("\nInsira um valor: ");
+    scanf("%d", &n);
+
+    bit1 = n % 2;
+    res = n / 2;
+
+    bit2 = res % 2;
+    res = res / 2;
+
+    bit3 = res % 2;
+    res = res / 2;
+
+    bit4 = res % 2;
+    res = res / 2;
+
+    bit5 = res % 2;
+    res = res / 2;
+
+    bit6 = res % 2;
+    res = res / 2;
+
+    printf("O numero %d em binario: %d%d%d%d%d%d%d\n",
+           n, res % 2, bit6, bit5, bit4, bit3, bit2, bit1);
+
+
+    // Exercicio 4
+
+    float salario, vendas, comissao;
+
+    printf("\nDigite o salario: ");
+    scanf("%f", &salario);
+
+    printf("Total de vendas: ");
+    scanf("%f", &vendas);
+
+    comissao = salario + (vendas * 0.15);
+
+    printf("Valor a receber: %.2f\n", comissao);
+
+
+    // Exercicio 5
+
+    int valor_1, valor_2, valor_3, valor_4;
+    float media;
+
+    printf("\nDigite quatro valores: ");
+    scanf("%d", &valor_1);
+    scanf("%d", &valor_2);
+    scanf("%d", &valor_3);
+    scanf("%d", &valor_4);
+
+    media = (valor_1 + valor_2 + valor_3 + valor_4) / 4.0;
+
+    printf("A media sera de: %.2f\n", media);
+
+
+    // Exercicio 6
+
+    int idade, anos, meses, dias;
+
+    printf("\nDigite a idade em dias: ");
+    scanf("%d", &idade);
+
+    anos = idade / 365;
+    meses = (idade % 365) / 30;
+    dias = (idade % 365) % 30;
+
+    printf("Idade: %d anos, %d meses e %d dias\n",
+           anos, meses, dias);
+
+
+    // Exercicio 7
+
+    float raio, pi, valor_raio, total;
+
+    pi = 3.14159;
+
+    printf("\nDigite o valor do raio(R): ");
+    scanf("%f", &raio);
+
+    valor_raio = raio * raio * raio;
+    total = (4.0 / 3.0) * pi * valor_raio;
+
+    printf("Volume da esfera: %.2f\n", total);
+
+
+    // Exercicio 8
+
+    int x1, x2, y1, y2;
+    float dist;
+
+    printf("\nInsira o valor do par ordenado P1(x1,y1): ");
+    scanf("%d", &x1);
+    scanf("%d", &y1);
+
+    printf("Insira o valor do par ordenado P2(x2,y2): ");
+    scanf("%d", &x2);
+    scanf("%d", &y2);
+
+    dist = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+    printf("A distancia entre P1 e P2 = %.2f\n", dist);
+
+
+    return 0;
+}
