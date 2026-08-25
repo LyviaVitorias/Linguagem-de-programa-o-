@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	
+	int n, r;
+	printf("insira o valor: ")
+	scanf("%d", &n);
+	
+	if(n>0){
+		r =n*-1;
+		}else{
+			r = n*n;
+		}
+		printf("%d",r);
+		
+		return 0;
+	}
+	
+	
+	
+#include <iostream>
+
+using namespace std;	
+		
+	int n;
+	
+	printf ("Digete um numero: ");
+	scanf("%d", &n);
+	
+	if (n % 2 == 0) {
+		printf("O numero par");	
+	} else {
+		printf("o numero impa");
+	}
+
+    return 0;
+}
